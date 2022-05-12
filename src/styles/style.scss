@@ -1,8 +1,63 @@
 @import 'node_modules/reset-css/sass/_reset.scss';
 
-
-#canvas-preview {
-    width: 600px;
-    height: 600px;
-    border: 1px dashed green;
+body {
+    height: 100vh;
 }
+.main-box {
+    width: 400px;
+    margin: 70px auto 0;
+   
+    
+    #form {
+        width: 100%;
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            line-height: 21px;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 23px;
+
+            label {
+                font-family: 'Arial', sans-serif;
+                font-size: 16px;
+                line-height: 21px;
+                color: #000000;
+            }
+
+            input {
+                width: 100%;
+                height: 21px;
+                border: 1px solid #000000;
+            }
+
+            textarea {
+                width: 100%;
+                height: 153px;
+                border: 1px solid #000000;
+            }
+        }
+
+        .buttom-control {
+            input[type="submit"] {
+                border: none;
+                width: 100%;
+                height: 41px;
+                background: #C4C4C4;
+                font-family: 'Arial', sans-serif;
+                font-size: 16px;
+                line-height: 21px;
+                color: #000000;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

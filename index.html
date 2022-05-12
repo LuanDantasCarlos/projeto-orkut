@@ -10,9 +10,30 @@
 
     <body>
         
-        <canvas id="canvas-preview" width="713" height="606"></canvas>
+        <!-- <canvas id="canvas-preview" width="713" height="606"></canvas> -->
+        <div class="main-box">
+            <form id="form" name="form">
+                <h1>Gerador de Post de Orkut</h1>
+
+                <div class="form-control">
+                    <label for="name">Autor</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o Nome do Autor">
+                </div>
+                <div class="form-control">
+                    <label for="comunidade">Titulo da comunidade</label>
+                    <input type="text" id="comunidade" name="comunidade" placeholder="Digite o Titulo da comunidade">
+                </div>
+                <div class="form-control">
+                    <label for="name">Autor</label>
+                    <textarea id="texto" name="texto" placeholder="Digite o seu texto"></textarea>
+                </div>
+                <div class="buttom-control">
+                    <input type="submit" value="Baixar">
+                </div>
+            </form>
+        </div>
 
 
-        <script type="module" src="src/scripts/main.js"></script>
+        <script type="module" src="./src/scripts/main.js"></script>
     </body>
 </html>
