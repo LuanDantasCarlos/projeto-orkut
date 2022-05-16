@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="./src/assets/imgs/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
 
         <title>Projeto Orkut</title>
     </head>
@@ -28,14 +29,15 @@
                     <textarea id="texto" name="texto" placeholder="Digite o seu texto"></textarea>
                 </div>
                 <div class="buttom-control">
-                    <input type="submit" value="Baixar">
+                    <input id="submit" type="submit" value="Baixar">
                 </div>
             </form>
 
             <canvas id="canvas-preview" width="713" height="606"></canvas>
         </div>
 
-
+        <script src="./src/scripts/canvas.js"></script>
         <script type="module" src="./src/scripts/main.js"></script>
+
     </body>
 </html>

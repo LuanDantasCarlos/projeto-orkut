@@ -72,7 +72,8 @@ body {
     }
 
     #canvas-preview {
-        background-color: red;
+        background-image: url(../assets/imgs/fundo_canvas.PNG);
+        background-size: contain;
         
         @media (max-width: 767px) {
             margin-top: 40px;
