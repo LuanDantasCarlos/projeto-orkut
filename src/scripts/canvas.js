@@ -8,38 +8,48 @@ const Y = (height/2) - (400/2);
 
 
 
-//ctx.fillStyle = '#00FF00';
-//ctx.fillRect(250, 150, 430, 300);
 
 
-ctx.fillStyle = '#ff8f';
-ctx.fillRect(3, 190, 140, 40);
+
+
 
 ctx.fillStyle = '#ff5f';
 ctx.fillRect(320, 498, 380, 20);
 
-const btn = document.getElementById("submit");
+const inputComunidade = document.getElementById("comunidade");
+const inputTexto = document.getElementById("texto");
 
-btn.addEventListener("click", function(e) {
+inputComunidade.addEventListener("input", function(e) {
 
     e.preventDefault();
-    const name = document.querySelector("#name");
     const comunidade = document.querySelector("#comunidade");
+
+    const valueComunidade = comunidade.value;
+   
+    ctx.fillStyle = '#f2d';
+    ctx.fillRect(3, 185, 145, 40);
+    
+    ctx.font = '550 Courier New 50px';
+    ctx.fillStyle = '#000';
+    ctx.textAlign = 'left';
+    ctx.fillText(valueComunidade, 3, 190);
+    
+});
+
+inputTexto.addEventListener("input", function(e) {
+
+    e.preventDefault();
     const texto = document.querySelector("#texto");
 
-    const valueName = name.value;
-    const valueComunidade = comunidade.value;
     const valueTexto = texto.value;
-
-
-    ctx.font = '5 Courier New 50px';
-    ctx.fillStyle = '#fff';
-    ctx.textAlign = 'space-betw';
-    var i in (valueName); {
-        ctx.fillText(valueName[i], 500, 400);
-    }
-    document.getElementById("result")
-    const img = ctx.canvas.toDataURL('#result');
+   
+    ctx.fillStyle = '#ddeefe';
+    ctx.fillRect(300, 110, 397, 345);
+    
+    ctx.font = '550 Courier New 50px';
+    ctx.fillStyle = '#000';
+    ctx.textAlign = 'left';
+    ctx.fillText(valueTexto, 300, 125);
     
 });
 
